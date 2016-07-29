@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+<h1>
+    <b>{{=book.title}}</b>
+</h1>
+
+<h2>
+    <ul>
+        <li>Code: {{=book.code}}</li>
+        <li>Author: {{=book.author}}</li>
+        <li>Year: {{=book.year}}</li>
+        <li>Created on: {{=book.created_on}}</li>
+    </ul>
+</h2>
+
+<p>
+{{=A('Edit', _href=URL('edit', args=request.args))}}
+</p>
+
+<p>
+{{=A('Back to list', _href=URL('index'))}}
+</p>

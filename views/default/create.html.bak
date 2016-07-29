@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+<h1>Register new book</h1>
+
+{{=HR(_style="border-width: 1px;")}}
+
+{{=form}}

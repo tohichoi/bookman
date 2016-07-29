@@ -1,0 +1,17 @@
+{{extend 'layout.html'}}
+
+{{=A("신규등록", _href=URL("create"))}}
+
+<!--
+<h1>
+    Current Books : total {{=len(books)}}
+</h1>
+
+<ul>
+{{for book in books:}}
+{{=LI(A("%s, %s, %s, %s" % (book.title, book.author, book.year, book.created_on), _href=URL("show", args=book.id)))}}
+{{pass}}
+</ul>
+-->
+
+{{=grid}}
